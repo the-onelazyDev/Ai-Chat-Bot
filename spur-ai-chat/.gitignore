@@ -1,11 +1,83 @@
+# Dependencies
 node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Production builds
 dist/
 build/
 .svelte-kit/
+frontend/build/
+backend/dist/
+
+# Environment variables (NEVER commit these)
 .env
 .env.local
-.DS_Store
-*.log
-coverage/
+.env.*.local
+.env.production.local
+
+# IDE & Editor files
 .vscode/
 .idea/
+*.swp
+*.swo
+*.swn
+*~
+.DS_Store
+.AppleDouble
+.LSOverride
+*.sublime-workspace
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Database files (local only)
+*.db
+*.db-shm
+*.db-wal
+!spur_chat.db.example
+
+# Temporary files
+tmp/
+temp/
+.cache/
+
+# Docker
+.docker/
+
+# IDE
+.env.example.backup
+
+# Development
+.vite/
+.parcel-cache/
+
+# Backend specific
+backend/node_modules/
+backend/dist/
+backend/.env
+
+# Frontend specific
+frontend/node_modules/
+frontend/build/
+frontend/.env
+
+# OS
+.DS_Store
+Thumbs.db

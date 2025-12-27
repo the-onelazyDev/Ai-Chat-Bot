@@ -1,0 +1,17 @@
+# Render deployment configuration
+
+# Build specification
+build:
+  # Install all dependencies
+  - npm install --prefix backend
+  - npm run build:backend
+
+# Start command for Render
+start:
+  - node backend/dist/index.js
+
+# Node version
+nodeVersion: 18
+
+# Ensure proper environment
+env: production
